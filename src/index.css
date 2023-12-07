@@ -107,3 +107,50 @@ nav ul li a {
   margin: 0 10px 5px 0;
   background-color: #ff1414;
 }
+
+.explore {
+  background-image: url(../public//explore.jpg);
+  block-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to top,
+    black,
+    rgba(0, 0, 0, 0.647),
+    rgba(0, 0, 0, 0.221),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.serviceCardLine {
+  width: 55px;
+  height: 2px;
+  transition: 0.5s;
+}
+
+.gradient:hover .serviceCardLine {
+  width: 100%;
+}
+
+.trial {
+  background-image: url(../public/trial.jpg);
+
+  block-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.sponsor {
+  background-image: linear-gradient(
+    to top,
+    black,
+    rgba(0, 0, 0, 0.647),
+    rgba(0, 0, 0, 0.221),
+    rgba(0, 0, 0, 0.05)
+  );
+}
