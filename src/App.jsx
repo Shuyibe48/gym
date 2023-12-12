@@ -4,8 +4,8 @@ import Feature from "./components/Feature";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import News from "./components/News";
 import Services from "./components/Services";
-import Trial from "./components/Trial";
 import Explore from "./components/explore";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <AboutUs />
       <Explore />
       <Services />
-      <Trial />
+      <News />
       <Contact />
       <Footer />
     </div>

@@ -37,12 +37,12 @@ const serviceData = [
       schedule: "Sat at 9:00 AM",
     },
     image: "../../public/3.jpg",
-  }
+  },
 ];
 
 const Services = () => {
   return (
-    <div className="py-28 container px-4 lg:px-0">
+    <div className="lg:py-28 pt-28 container px-4 lg:px-0" id="services">
       <h1 className="text-white text-md lg:text-xl font-bold tracking-wider text-center">
         OUR SERVICES
       </h1>

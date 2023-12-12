@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FiCheck } from "react-icons/fi";
 import Sponsers from "./Sponsor";
+import News from "./News";
 
 const buttonVariants = {
   initial: { x: -1000 },
@@ -12,14 +13,14 @@ const Trial = () => {
   return (
     <div className="trial relative container px-4 lg:px-0 z-20 py-28">
       <div
-        className="lg:flex justify-center items-center gap-12 py-8container px-4 lg:px-0 z-20"
+        className="lg:flex lg:justify-center lg:items-center lg:gap-12 py-8container px-0 lg:px-0 z-20"
         id="trial"
       >
-        <div className="w-full lg:w-1/2 lg:ps-8">
+        <div className=" lg:w-1/2 lg:ps-8">
           <h1 className="text-white text-md lg:text-xl font-bold tracking-wider">
             FREE TRIAL TRAINING
           </h1>
-          <p className="text-gray-400 tracking-wider mb-6 lg:mb-8 leading-relaxed">
+          <p className="text-gray-400 tracking-wider text-sm lg:text-md mb-6 lg:mb-8 leading-relaxed">
             FREE TRIAL TRAINING Make an appointment today for your free and
             non-binding trial session with or without one of our personal
             trainers.
@@ -36,7 +37,7 @@ const Trial = () => {
           </motion.button>
         </div>
 
-        <div className="w-full lg:w-1/2 about-img-sec flex justify-center mt-12 lg:mt-0 z-20">
+        <div className="lg:w-1/2 about-img-sec flex justify-center mt-12 lg:mt-0 z-20">
           <div className="w-full bg-black p-8">
             <h1 className="text-2xl lg:text-4xl my-4 lg:my-4 lg:mb-8 text-white font-extrabold tracking-wider">
               WHAT<span className="text-[#FF1414]"> CLIENTS </span>SAY

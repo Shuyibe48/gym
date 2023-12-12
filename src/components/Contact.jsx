@@ -33,12 +33,12 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <div className="py-28 container px-4 lg:px-0">
-      <div className="flex justify-center items-center gap-x-4 text-center mb-12">
+    <div className="py-28 container px-4 lg:px-0" id="contact">
+      <div className="lg:flex justify-center items-center gap-x-4 text-center mb-12">
         {contacts.map((contact) => {
           return (
             <div
-              className="bg-[#09101A] p-8 rounded-md serviceCard w-1/3"
+              className="bg-[#09101A] p-8 rounded-md serviceCard lg:w-1/3"
               key={contact.id}
             >
               <button className="bg-[#FF1414] text-white text-5xl p-2 rounded-md">

@@ -7,7 +7,7 @@ const buttonVariants = {
 
 const Footer = () => {
   return (
-    <footer className="bg-black container mx-auto text-gray-300 pt-28 pb-8">
+    <footer className="bg-black container mx-auto ps-4 lg:ps-0 text-gray-300 pt-28 pb-8">
       <div className="flex flex-wrap justify-between">
         <div className="w-full md:w-1/3 mb-4 md:mb-0">
           <h2 className="text-2xl font-bold mb-4 text-white">CONTACT</h2>
@@ -27,22 +27,22 @@ const Footer = () => {
           <p>
             Subscribe to take advantage of our campaigns and gift certificates.
           </p>
-          <div className="flex items-center mt-4">
+          <div className="lg:flex items-center mt-4">
             <input
               type="email"
               placeholder="Your email"
               className="bg-transparent bg-gray-900 text-white ps-2 py-3 tracking-wider leading-relaxed rounded-l"
             />
             <motion.button
-            variants={buttonVariants}
-            initial="initial"
-            animate="animate"
-            whileHover="hover"
-            className="bg-[#FF1414] hover:bg-transparent
+              variants={buttonVariants}
+              initial="initial"
+              animate="animate"
+              whileHover="hover"
+              className="bg-[#FF1414] hover:bg-transparent
            rounded-md text-gray-200 px-8 py-3 tracking-wider leading-relaxed"
-          >
-            SUBSCRIBE
-          </motion.button>
+            >
+              SUBSCRIBE
+            </motion.button>
           </div>
         </div>
       </div>

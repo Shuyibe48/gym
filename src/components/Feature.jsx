@@ -38,7 +38,7 @@ const features = [
 
 const Feature = () => {
   return (
-    <div className="pb-28 container px-4 lg:px-0" id="feature">
+    <div className="lg:pb-28 container px-4 lg:px-0" id="feature">
       <h1 className="text-white text-center text-2xl lg:text-4xl font-bold mb-4">
         FEATURES
       </h1>

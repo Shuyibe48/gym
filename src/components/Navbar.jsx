@@ -20,15 +20,19 @@ const Navbar = () => {
   };
 
   window.addEventListener("scroll", changeBackground);
-  
+
   return (
     <motion.nav
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120, duration: 0.5 }}
-      className={nav ? "nav container px-4 py-4 lg:px-0 bg-[#030303]" : "nav container px-4 py-4 lg:px-0"}
+      className={
+        nav
+          ? "nav container px-4 py-4 lg:px-0 bg-[#030303] z-50"
+          : "nav container px-4 py-4 lg:px-0 z-50"
+      }
     >
-      <Link to="#" className="logo">
+      <Link to="main" className="logo cursor-pointer">
         <h2 className="text-4xl font-extrabold text-white">
           Gym<span className="text-[#FF1414]">.</span>
         </h2>
@@ -55,20 +59,26 @@ const Navbar = () => {
           fold ? "block" : "hidden"
         } lg:block ${fold ? "absolute top_72 text-center w-full" : ""}`}
       >
-        <li>
-          <Link to="#">HEADER</Link>
+        <li className="cursor-pointer">
+          <Link to="main">HEADER</Link>
         </li>
-        <li>
-          <Link to="#feature">FEATURES</Link>
+        <li className="cursor-pointer">
+          <Link to="feature">FEATURES</Link>
         </li>
-        <li>
-          <Link to="#">OFFER</Link>
+        <li className="cursor-pointer">
+          <Link to="about">ABOUT US</Link>
         </li>
-        <li>
-          <Link to="#">ABOUT</Link>
+        <li className="cursor-pointer">
+          <Link to="explore">EXPLORE</Link>
         </li>
-        <li>
-          <Link to="#">CONTACT</Link>
+        <li className="cursor-pointer">
+          <Link to="services">SERVICES</Link>
+        </li>
+        <li className="cursor-pointer">
+          <Link to="news">NEWS LETTER</Link>
+        </li>
+        <li className="cursor-pointer">
+          <Link to="contact">CONTACT</Link>
         </li>
       </ul>
     </motion.nav>
